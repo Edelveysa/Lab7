@@ -7,161 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d1d7f72-61a9-4565-b5b1-047810b3000c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Lab7-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Lab7_main_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Lab7_main_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fc464aaf-bc88-46e5-a56f-c6e86c1d80c9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fc464aaf-bc88-46e5-a56f-c6e86c1d80c9/storage_v2/_src_/database/studs.ww2LBg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fc464aaf-bc88-46e5-a56f-c6e86c1d80c9/storage_v2/_src_/database/studs.ww2LBg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fc464aaf-bc88-46e5-a56f-c6e86c1d80c9/storage_v2/_src_/database/studs.ww2LBg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/fc464aaf-bc88-46e5-a56f-c6e86c1d80c9/storage_v2/_src_/database/studs.ww2LBg/schema/s270246._I3cGw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab7-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gson-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/Client.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/ClientModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/utility/AuthAsker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/utility/AuthManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/utility/Console$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/utility/Console.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/utility/HumanBeingBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/clientModule/utility/ProcessCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/data/Chapter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/data/Coordinates.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/data/HumanBeing.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/data/Weapon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/DatabaseManagerException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/EmptyCollectionException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/IllegalDatabaseEditException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/IncorrectInputInScriptException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/MultiUserException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/NonAuthorizedUserException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/NotDeclaredValueException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/NotFoundLoginAndPasswordException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/NotFoundMarineException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/PermissionDeniedException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/ScriptRecursionException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/UserAlreadyExistException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/UserNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/exceptions/WrongAmountOfParametersException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/utility/HumanBeingLite.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/utility/Request.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/utility/Response.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/utility/ResponseCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/common/utility/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/Server.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/ServerModule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/AbstractCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/AverageOfHeartCountCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/ClearCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/ExecuteScriptCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/ExitCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/HelpCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/HistoryCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/InfoCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/InsertCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/LoadCollectionCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/LogOutCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/RemoveAllByWeaponTypeCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/RemoveGreaterCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/RemoveKeyCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/RemoveLowerKeyCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/SaveCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/ShowCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/SignInCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/SignUpCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/SumOfHealthCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/commands/UpdateCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/CollectionManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/CommandManager$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/CommandManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/DataHasher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/DatabaseCollectionManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/DatabaseManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/DatabaseUserManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/FileManager$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/FileManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/RequestManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/RequestProcessingThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/ResponseOutputer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Lab7-main/serverModule/utility/ResponseSenderThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postgresql-42.2.20.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/ClientModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/utility/AuthAsker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/utility/AuthManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/utility/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/utility/HumanBeingBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/clientModule/utility/ProcessCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/data/Chapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/data/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/data/HumanBeing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/data/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/DatabaseManagerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/EmptyCollectionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/IllegalDatabaseEditException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/IncorrectInputInScriptException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/MultiUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/NonAuthorizedUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/NotDeclaredValueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/NotFoundLoginAndPasswordException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/NotFoundMarineException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/PermissionDeniedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/ScriptRecursionException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/UserAlreadyExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/exceptions/WrongAmountOfParametersException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/utility/HumanBeingLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/utility/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/utility/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/utility/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/utility/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/ServerModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/AbstractCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/AverageOfHeartCountCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/ClearCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/ExecuteScriptCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/ExitCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/HelpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/HistoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/InfoCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/InsertCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/LoadCollectionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/LogOutCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/RemoveAllByWeaponTypeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/RemoveGreaterCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/RemoveKeyCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/RemoveLowerKeyCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/SaveCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/ShowCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/SignInCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/SignUpCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/SumOfHealthCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/commands/UpdateCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/CollectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/CommandManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/DataHasher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/DatabaseCollectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/DatabaseManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/DatabaseUserManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/RequestManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/RequestProcessingThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/ResponseOutputer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/serverModule/utility/ResponseSenderThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/DataHasher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/DataHasher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/DatabaseCollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/DatabaseCollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/DatabaseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/DatabaseUserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/DatabaseUserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/RequestManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/RequestManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/RequestProcessingThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/RequestProcessingThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serverModule/utility/ResponseOutputer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/utility/ResponseOutputer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +49,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -291,8 +146,23 @@
       <workItem from="1623082342265" duration="368000" />
       <workItem from="1623082798411" duration="32000" />
       <workItem from="1623082850705" duration="2703000" />
-      <workItem from="1623085646064" duration="27640000" />
+      <workItem from="1623085646064" duration="32306000" />
     </task>
+    <task id="LOCAL-00001" summary="done, add comments">
+      <created>1623134467068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623134467068</updated>
+    </task>
+    <task id="LOCAL-00002" summary="done, add comments">
+      <created>1623134651067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623134651067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

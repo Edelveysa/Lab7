@@ -1,6 +1,12 @@
 package serverModule.utility;
 
+
+/**
+ * Класс ResponseOutputer.
+ * Менеджер ответов, работает с выводом ответа.
+ */
 public class ResponseOutputer {
+
     private static StringBuilder stringBuilder = new StringBuilder();
 
     public static void append(Object o) {

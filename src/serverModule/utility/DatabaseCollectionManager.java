@@ -86,6 +86,13 @@ public class DatabaseCollectionManager {
         this.databaseUserManager = databaseUserManager;
     }
 
+    /**
+     * Получение героя из базы данных.
+     * @param resultSet
+     * @param id
+     * @return
+     * @throws SQLException
+     */
     private HumanBeing returnHero(ResultSet resultSet, int id) throws SQLException{
         String name = resultSet.getString(DatabaseManager.HERO_TABLE_NAME_COLUMN);
         Coordinates coordinates = getCoordinatesByID(resultSet.getInt(DatabaseManager.HERO_TABLE_COORDINATES_ID_COLUMN));
@@ -99,6 +106,10 @@ public class DatabaseCollectionManager {
         return new HumanBeing(id, name, coordinates, creationDate, health, heartCount, achieve, weaponType, chapter, owner );
     }
 
+    /**
+     * Получение всех героев из коллекции.
+     * @return humans - коллекция героев.
+     */
     public TreeMap<Integer, HumanBeing> getCollection() {
         TreeMap<Integer, HumanBeing> humans = new TreeMap<>();
         PreparedStatement preparedStatement = null;
@@ -116,6 +127,12 @@ public class DatabaseCollectionManager {
         return humans;
     }
 
+    /**
+     * Получить координаты героя по id
+     * @param id - id героя
+     * @return coordinates - координаты героя
+     * @throws SQLException
+     */
     private Coordinates getCoordinatesByID(int id) throws SQLException {
         Coordinates coordinates;
         PreparedStatement preparedStatement = null;
@@ -138,6 +155,12 @@ public class DatabaseCollectionManager {
         return coordinates;
     }
 
+    /**
+     * Получение главы героя из бд.
+     * @param id - id героя
+     * @return chapter - глава героя
+     * @throws SQLException
+     */
     private Chapter getChapterByID(int id) throws SQLException {
         Chapter chapter;
         PreparedStatement preparedStatement = null;
@@ -160,6 +183,12 @@ public class DatabaseCollectionManager {
         return chapter;
     }
 
+    /**
+     * Получение id главы по id героя
+     * @param heroID - id героя
+     * @return chapterID - id главы
+     * @throws SQLException
+     */
     private int getChapterIdByHeroID(int heroID) throws SQLException {
         int chapterID;
         PreparedStatement preparedStatement = null;
@@ -179,6 +208,12 @@ public class DatabaseCollectionManager {
         return chapterID;
     }
 
+    /**
+     * Получение id координат по id героя
+     * @param heroID - id героя
+     * @return coordinatesID - id главы
+     * @throws SQLException
+     */
     private int getCoordinatesIdByHeroID(int heroID) throws SQLException {
         int coordinatesID;
         PreparedStatement preparedStatement = null;
@@ -198,6 +233,14 @@ public class DatabaseCollectionManager {
         return coordinatesID;
     }
 
+    /**
+     * Добавление нового героя по ключу.
+     * @param humanBeingLite
+     * @param user
+     * @param key
+     * @return объект героя
+     * @throws DatabaseManagerException
+     */
     public HumanBeing insertHero(HumanBeingLite humanBeingLite, User user, int key) throws DatabaseManagerException {
         HumanBeing humanBeing;
         PreparedStatement insertHuman = null;
@@ -270,6 +313,12 @@ public class DatabaseCollectionManager {
         }
     }
 
+    /**
+     * Обновить данные героя по его id
+     * @param heroID
+     * @param beingLite
+     * @throws DatabaseManagerException
+     */
     public void updateHeroByID(int heroID, HumanBeingLite beingLite) throws DatabaseManagerException {
         PreparedStatement updateName = null;
         PreparedStatement updateCoordinates = null;
@@ -344,6 +393,13 @@ public class DatabaseCollectionManager {
         }
     }
 
+    /**
+     * Проверка героя по его id и id пользователя, который его добавил.
+     * @param heroID
+     * @param user
+     * @return перевод на следующую строку множества-ответа с бд.
+     * @throws DatabaseManagerException
+     */
     public boolean checkHeroByIdAndUserId(int heroID, User user) throws DatabaseManagerException {
         PreparedStatement preparedStatement = null;
         try {
@@ -360,6 +416,11 @@ public class DatabaseCollectionManager {
         }
     }
 
+    /**
+     * Удаления героя по его id
+     * @param heroID
+     * @throws DatabaseManagerException
+     */
     public void deleteHeroById(int heroID) throws DatabaseManagerException {
         PreparedStatement deleteHero = null;
         PreparedStatement deleteCoordinates = null;
@@ -386,6 +447,10 @@ public class DatabaseCollectionManager {
         }
     }
 
+    /**
+     * Очистка коллекции.
+     * @throws DatabaseManagerException
+     */
     public void clearCollection() throws DatabaseManagerException{
         TreeMap<Integer, HumanBeing> humans = getCollection();
         for (HumanBeing being : humans.values()) {

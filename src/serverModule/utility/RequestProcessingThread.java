@@ -6,7 +6,10 @@ import common.utility.User;
 
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
+/**
+ * Класс RequestProcessingThread
+ * Менеджер запросов, работает с новыми соединениями.
+ */
 public class RequestProcessingThread extends Thread{
     private RequestManager requestManager;
     private Request request;

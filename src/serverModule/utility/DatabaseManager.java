@@ -4,12 +4,18 @@ import java.io.Console;
 import java.sql.*;
 import java.util.Scanner;
 
+/**
+ * Класс DatabaseManager.
+ * Связь с базой данных.
+ */
 public class DatabaseManager {
+    /** Поля таблицы бд*/
     public static final String HERO_TABLE = "hero_base";
     public static final String USER_TABLE = "users";
     public static final String COORDINATES_TABLE = "coordinates";
     public static final String CHAPTER_TABLE = "chapter";
 
+    /** Поля параметры(столбцы) таблицы героев */
     public static final String HERO_TABLE_ID_COLUMN = "id";
     public static final String HERO_TABLE_KEY_COLUMN = "key";
     public static final String HERO_TABLE_NAME_COLUMN = "name";
@@ -22,15 +28,18 @@ public class DatabaseManager {
     public static final String HERO_TABLE_CHAPTER_ID_COLUMN = "chapter_id";
     public static final String HERO_TABLE_USER_ID_COLUMN = "user_id";
 
+    /** Поля параметры(столбцы) таблицы пользователей */
     public static final String USER_TABLE_ID_COLUMN = "id";
     public static final String USER_TABLE_USERNAME_COLUMN = "username";
     public static final String USER_TABLE_PASSWORD_COLUMN = "password";
     public static final String USER_TABLE_ONLINE_COLUMN = "online";
 
+    /** Поля параметры(столбцы) таблицы глав */
     public static final String CHAPTER_TABLE_ID_COLUMN = "id";
     public static final String CHAPTER_TABLE_NAME_COLUMN = "name";
     public static final String CHAPTER_TABLE_PARENT_LEGION_COLUMN = "parent_legion";
 
+    /** Поля параметры(столбцы) таблицы координат */
     public static final String COORDINATES_TABLE_ID_COLUMN = "id";
     public static final String COORDINATES_TABLE_X_COLUMN = "x";
     public static final String COORDINATES_TABLE_Y_COLUMN = "y";
@@ -47,11 +56,13 @@ public class DatabaseManager {
         doConnectionToDatabase();
     }
 
+    /**
+     * Соединение с бд.
+     */
     private void doConnectionToDatabase() {
         Scanner scanner = new Scanner(System.in);
         Console console = System.console();
         System.out.println("Подключение к базе данных...");
-
             try {
                 Class.forName(JDBC_DRIVER);
                 connection = DriverManager.getConnection(url, user, password);
@@ -68,6 +79,13 @@ public class DatabaseManager {
 
     }
 
+    /**
+     * Создание запроса для бд.
+     * @param sqlStatement
+     * @param generateKeys
+     * @return preparedStatement - запрос в бд
+     * @throws SQLException
+     */
     public PreparedStatement doPreparedStatement(String sqlStatement, boolean generateKeys) throws SQLException {
         PreparedStatement preparedStatement;
         try {
@@ -83,6 +101,10 @@ public class DatabaseManager {
         }
     }
 
+    /**
+     * Закрытие запроса в бд.
+     * @param preparedStatement
+     */
     public void closePreparedStatement(PreparedStatement preparedStatement) {
         if (preparedStatement == null) return;
         try {
@@ -92,6 +114,9 @@ public class DatabaseManager {
         }
     }
 
+    /**
+     * Закрытие соединения с бд.
+     */
     public void closeConnection() {
         if (connection == null) return;
         try {
@@ -102,6 +127,7 @@ public class DatabaseManager {
         }
     }
 
+
     public void setCommit() {
         try {
             if (connection == null) throw new SQLException();
@@ -110,6 +136,7 @@ public class DatabaseManager {
             System.out.println("Произошла ошибка при установлении 'commit'!");
         }
     }
+
 
     public void setAutoCommit() {
         try {

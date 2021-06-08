@@ -4,14 +4,23 @@ import common.utility.Request;
 import common.utility.Response;
 import common.utility.ResponseCode;
 import common.utility.User;
-
+/**
+ * Класс RequestManager
+ * Менеджер запросов на сервер.
+ */
 public class RequestManager {
+    /** Поле менеджер команд */
     private CommandManager commandManager;
 
     public RequestManager(CommandManager commandManager) {
         this.commandManager = commandManager;
     }
 
+    /**
+     * Формирование ответа.
+     * @param request
+     * @return responce - ответ с сервера
+     */
     public Response manage(Request request) {
         User hashUser;
         if (request.getUser() == null) {
@@ -25,6 +34,14 @@ public class RequestManager {
         return new Response(responseCode, ResponseOutputer.getAndClear());
     }
 
+    /**
+     * Проверка, какая команда введена.
+     * @param command
+     * @param argument
+     * @param objectArgument
+     * @param user
+     * @return статус кода ответа.
+     */
     private synchronized ResponseCode executeCommand(String command, String argument, Object objectArgument, User user) {
         switch (command) {
             case "":

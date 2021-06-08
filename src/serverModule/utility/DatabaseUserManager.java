@@ -8,6 +8,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Класс DatabaseUserManager.
+ * Связь с базой данных пользователей.
+ */
 public class DatabaseUserManager {
     private final String SELECT_USER_BY_ID = "SELECT * FROM " + DatabaseManager.USER_TABLE +
             " WHERE " + DatabaseManager.USER_TABLE_ID_COLUMN + " = ?";
@@ -26,7 +30,6 @@ public class DatabaseUserManager {
             DatabaseManager.USER_TABLE_PASSWORD_COLUMN + " = ?";
     private final String SWITCH_OFF_ALL_USERS = "UPDATE " + DatabaseManager.USER_TABLE + " SET " +
             DatabaseManager.USER_TABLE_ONLINE_COLUMN + " = ?";
-    //UPDATE *имя бд* SET online = ?
 
     private DatabaseManager databaseManager;
 
@@ -35,6 +38,9 @@ public class DatabaseUserManager {
         switchOffAllUsers();
     }
 
+    /**
+     * Выключение всех пользователей.
+     */
     public void switchOffAllUsers() {
         PreparedStatement preparedStatement = null;
         try {
@@ -47,6 +53,12 @@ public class DatabaseUserManager {
         }
     }
 
+    /**
+     * Получение пользователя по id
+     * @param userID
+     * @return user - пользователь
+     * @throws SQLException
+     */
     public User getUserById(long userID) throws SQLException {
         User user;
         PreparedStatement preparedStatement = null;
@@ -69,6 +81,13 @@ public class DatabaseUserManager {
         return user;
     }
 
+    /**
+     * Проверка наличия пользователя в бд пользователей.
+     * @param user
+     * @return boolean - наличие пользователя в бд
+     * @throws DatabaseManagerException
+     * @throws MultiUserException
+     */
     public boolean checkUserByUsernameAndPassword(User user) throws DatabaseManagerException, MultiUserException {
         PreparedStatement preparedStatement = null;
         try {
@@ -87,6 +106,12 @@ public class DatabaseUserManager {
         }
     }
 
+    /**
+     * Обновление статуса online пользователя.
+     * @param user
+     * @param newValue
+     * @throws DatabaseManagerException
+     */
     public void updateOnline(User user, boolean newValue) throws DatabaseManagerException {
         PreparedStatement preparedStatement = null;
         try {
@@ -103,6 +128,12 @@ public class DatabaseUserManager {
         }
     }
 
+    /**
+     * Получить id пользователя.
+     * @param user
+     * @return userID
+     * @throws DatabaseManagerException
+     */
     public int getUserIdByUsername(User user) throws DatabaseManagerException {
         int userID;
         PreparedStatement preparedStatement = null;
@@ -122,6 +153,12 @@ public class DatabaseUserManager {
         }
     }
 
+    /**
+     * Вставка пользователя в бд по id.
+     * @param user
+     * @return статус вставки.
+     * @throws DatabaseManagerException
+     */
     public boolean insertUser(User user) throws DatabaseManagerException {
         PreparedStatement preparedStatement = null;
         try {

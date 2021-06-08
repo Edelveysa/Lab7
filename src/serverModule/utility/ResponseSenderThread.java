@@ -8,7 +8,10 @@ import java.io.ObjectOutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
-
+/**
+ * Класс ResponseSenderThread.
+ * Менеджер ответов, работает с новым соединением..
+ */
 public class ResponseSenderThread extends Thread{
     private Response response;
     private InetAddress address;
@@ -31,12 +34,23 @@ public class ResponseSenderThread extends Thread{
         }
     }
 
+    /**
+     * Отправка ответа клиенту.
+     * @param response
+     * @throws IOException
+     */
     private void sendResponse(Response response) throws IOException {
         byte[] sendBuffer = serialize(response);
         DatagramPacket sendPacket = new DatagramPacket(sendBuffer, sendBuffer.length, address, port);
         socket.send(sendPacket);
     }
 
+    /**
+     * Сериализация ответа.
+     * @param response
+     * @return buffer
+     * @throws IOException
+     */
     private byte[] serialize(Response response) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);

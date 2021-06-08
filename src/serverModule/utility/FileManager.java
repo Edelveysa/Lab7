@@ -14,7 +14,10 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 /**
- * Operates the file for saving/loading collection.
+ * Класс FileManager
+ * Работа с файлом.
+ *
+ * Upd 1.1: работы с файлом нет в 7й.
  */
 public class FileManager {
     private Gson gson = new Gson();
@@ -22,8 +25,8 @@ public class FileManager {
     private TreeMap<String, TreeMap<Integer, HumanBeing>> tree = new TreeMap<>();
 
     /**
-     * Writes collection to a file.
-     * @param collection Collection to write.
+     * Записывает коллекция в файл.
+     * @param collection
      */
     public void writeCollection(TreeMap<Integer, HumanBeing> collection) {
         File file = new File(this.fileName);
@@ -41,8 +44,9 @@ public class FileManager {
     }
 
     /**
-     * Reads collection from a file.
-     * @return Readed collection.
+     * Читает коллекцию из файла.
+     * @param fileName
+     * @return collection
      */
     public TreeMap<Integer, HumanBeing> readCollection(String fileName) {
         this.fileName = fileName;

@@ -3,9 +3,17 @@ package serverModule.utility;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+/**
+ * Класс DataHasher.
+ * Хэширование пароля.
+ */
 public class DataHasher {
 
+    /**
+     * Метод хэширования пароля.
+     * @param data
+     * @return newData
+     */
     public static String hash(String data) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-224");
