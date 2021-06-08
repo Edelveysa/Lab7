@@ -37,22 +37,20 @@ public class ClearCommand extends AbstractCommand{
             if (user == null) throw new NonAuthorizedUserException();
             if(!argument.isEmpty() || objectArgument != null) throw new WrongAmountOfParametersException();
             for (HumanBeing human : collectionManager.getCollection().values()) {
-                if (!human.getOwner().equals(user)) throw new PermissionDeniedException();
-                if (!databaseCollectionManager.checkHeroByIdAndUserId(human.getId(), user)) throw new IllegalDatabaseEditException();
+                if (!human.getOwner().equals(user)) ResponseOutputer.append("Мы нашли чужой. Мы удаляем лишь ваши объекты.\n");
+                if (databaseCollectionManager.checkHeroByIdAndUserId(human.getId(), user)) {
+                    databaseCollectionManager.deleteHeroById(human.getId());
+                    collectionManager.removeByValue(human);
+                }
             }
-            databaseCollectionManager.clearCollection();
-            collectionManager.clearCollection();
+//            databaseCollectionManager.clearCollection();
+//            collectionManager.clearCollection();
             ResponseOutputer.append("Коллекция успешно очищена!\n");
             return true;
         } catch (WrongAmountOfParametersException exception) {
             ResponseOutputer.append("У этой команды нет параметров!\n");
-        } catch (PermissionDeniedException exception) {
-            ResponseOutputer.append("Принадлежащие другим пользователям объекты доступны только для чтения!\n");
-        } catch (DatabaseManagerException exception) {
+        }  catch (DatabaseManagerException exception) {
             ResponseOutputer.append("Произошла ошибка при обращении к базе данных!\n");
-        } catch (IllegalDatabaseEditException exception) {
-            ResponseOutputer.append("Произошло нелегальное изменение объекта в базе данных!\n");
-            ResponseOutputer.append("Перезапустите клиент для избежания ошибок!\n");
         } catch (NonAuthorizedUserException e) {
             ResponseOutputer.append("Необходимо авторизоваться!\n");
         }

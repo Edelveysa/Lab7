@@ -112,6 +112,9 @@ public class Console {
                 scanner.close();
                 scanner = scannerStack.pop();
             }
+        } catch (NoSuchElementException exception){
+            System.out.println("Фатальная ошибка, извините...");
+            System.exit(0);
         }
         return new Request(userCommand[0], userCommand[1], null, user);
     }
