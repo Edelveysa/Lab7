@@ -7,7 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d1d7f72-61a9-4565-b5b1-047810b3000c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/artifacts/Lab7_main_jar2/Lab7-main.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/clientModule/utility/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/clientModule/utility/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/commands/ClearCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/commands/ClearCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DataHasher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DataHasher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DatabaseCollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DatabaseCollectionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DatabaseManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DatabaseManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DatabaseUserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/DatabaseUserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/FileManager$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/FileManager$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/FileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/RequestManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/RequestManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/RequestProcessingThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/RequestProcessingThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/ResponseOutputer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/ResponseOutputer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/ResponseSenderThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Lab7/serverModule/utility/ResponseSenderThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/clientModule/utility/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/clientModule/utility/Console.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/serverModule/commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serverModule/commands/ClearCommand.java" afterDir="false" />
     </list>
@@ -94,7 +107,7 @@
       <workItem from="1623082798411" duration="32000" />
       <workItem from="1623082850705" duration="2703000" />
       <workItem from="1623085646064" duration="34147000" />
-      <workItem from="1623146150040" duration="4154000" />
+      <workItem from="1623146150040" duration="4806000" />
     </task>
     <task id="LOCAL-00001" summary="done, add comments">
       <created>1623134467068</created>
@@ -123,10 +136,22 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done, add comments" />
     <MESSAGE value="add all comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="add all comments" />
+    <MESSAGE value="fix ctrl+d, fix clear" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix ctrl+d, fix clear" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
